@@ -1,0 +1,18 @@
+$max-width: 1580px;
+$padding: 2rem;
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+    max-width: $max-width;
+    width: 100%;
+    padding: $padding;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}

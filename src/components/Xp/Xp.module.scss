@@ -1,0 +1,54 @@
+.xp {
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__left {
+        max-width: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        position: relative;
+        color: #fff; // Цвет текста
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.089), transparent 70%);
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            z-index: -1;
+            filter: blur(50px);
+        }
+    }
+
+    &__years {
+        font-size: 16px;
+        line-height: 48px;
+        font-weight: 500;
+        color: #6f6f6f;
+    }
+
+    &__title {
+        font-size: 80px;
+        font-weight: 700;
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        color: #6f6f6f;
+    }
+
+    &__right {
+        max-width: 1000px;
+    }
+}
