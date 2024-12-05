@@ -1,6 +1,7 @@
 import '../../App.scss'
 import styles from './Footer.module.scss'
 import { currentDate } from '../../utils/currenDate'
+import GradientText from '../Effects/GradientText'
 
 export const Footer = () => {
     return (
@@ -8,7 +9,7 @@ export const Footer = () => {
             <footer className={styles.footer}>
                 <div className={styles.footer__container}>
                     <div className={styles.footer__left}>
-                        Follow me
+                        <GradientText text='Follow me' />
                     </div>
                     <div className={styles.footer__right}>
                         <a href="https://github.com/Vega781" className={styles.social__link}>

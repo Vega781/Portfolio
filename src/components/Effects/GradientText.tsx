@@ -17,12 +17,14 @@ const gradientVariants = {
 interface GradientTextProps {
     text: string;
     className?: string;
+    href?: string;
 }
 
-const GradientText: React.FC<GradientTextProps> = ({ text, className }) => {
+const GradientText: React.FC<GradientTextProps> = ({ text, className, href }) => {
     return (
         <motion.a
             className={className}
+            href={href}
             style={{
                 background: 'linear-gradient(90deg, #B292FF, #007BFF, #40E0D0, #B292FF)', // Цвета градиента
                 backgroundSize: '200% 200%', // Размер фона для анимации

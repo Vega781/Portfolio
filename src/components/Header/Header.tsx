@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+import GradientText from '../Effects/GradientText'
 import styles from './Header.module.scss'
 
 
@@ -6,15 +8,11 @@ export const Header = () => {
         <header className={styles.header}>
             <div className={styles.header__container}>
                 <nav className={styles.nav__container}>
-                    <a href="" className={styles.nav__link}>
-                        Home
-                    </a>
-                    <a href="/" className={styles.nav__link}>
-                        Education
-                    </a>
-                    <a href="/" className={styles.nav__link}>
-                        Projects
-                    </a>
+                    <Link to='/' className={styles.nav__link}>
+                        <GradientText text="Vega7" className={styles.nav__link} href="/" />
+                    </Link>
+                    <Link to="/projects" className={styles.nav__link}>Projects</Link>
+                    <Link to="/education" className={styles.nav__link}>Experience</Link>
                 </nav>
                 <nav className={styles.social__links}>
                     <a href="https://github.com/Vega781" className={styles.social__link}>

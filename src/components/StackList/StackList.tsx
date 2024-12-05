@@ -4,15 +4,16 @@ import { Technology } from "../../types/TechStack"
 import { Icon } from '@iconify/react';
 
 interface StackListProps {
-    technologies: Technology[]
+    technologies: Technology[],
+    ulClassName?: string;
     liClassName?: string;
     iconContainerClassName?: string;
     iconClassName?: string;
 }
 
-export const StackList: FC<StackListProps> = ({ technologies, liClassName, iconContainerClassName, iconClassName }) => {
+export const StackList: FC<StackListProps> = ({ technologies, ulClassName, liClassName, iconContainerClassName, iconClassName }) => {
     return (
-        <ul className={styles.stack__list}>
+        <ul className={ulClassName}>
             {technologies.map((tech, index) => (
                 <li key={index} className={liClassName}>
                     <div className={iconContainerClassName}>

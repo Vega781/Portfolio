@@ -19,7 +19,7 @@ export const TechSlider = () => {
                 <SwiperSlide key={index}>
                     <div
                         className={styles.slide}
-                        style={{ backgroundColor: tech.bgColor }}
+                        style={{ background: tech.gradient }}
                     >
                         <Icon icon={tech.icon} className={styles.icon} />
                         <div className={styles.name}>{tech.name}</div>
