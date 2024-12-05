@@ -7,6 +7,11 @@ export const Hero = () => {
     return (
         <section className={styles.hero}>
             <div className={styles.hero__container}>
+                <div className={styles.hero__1350}>
+                    <HeroRight>
+                        <img src={avatar} className={styles.hero__avatar} alt="Avatar" />
+                    </HeroRight>
+                </div>
                 <div className={styles.hero__left}>
                     <HeroLeft>
                         <h1 className={styles.hero__title}>Hi, I'm Max</h1>

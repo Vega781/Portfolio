@@ -2,6 +2,10 @@
     margin-top: 170px;
     margin-bottom: 250px;
 
+    &__1350 {
+        display: none;
+    }
+
     &__container {
         display: flex;
         justify-content: space-between;
@@ -45,5 +49,80 @@
     &__avatar {
         max-width: 550px;
         border-radius: 100px;
+    }
+
+
+    @media (max-width: 1350px) {
+        .hero {
+            
+            &__title {
+                text-align: center;
+            }
+
+            &__description {
+                text-align: center;
+            }
+
+            &__avatar {
+                max-width: 100%;
+            }
+
+            &__container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &__right {
+                display: none;
+            }
+
+            &__1350 {
+                display: block;
+                margin-bottom: 40px;
+            }
+        } 
+    }
+
+    @media (max-width: 700px) {
+        .hero {
+            &__avatar {
+                max-width: 100%;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        &__title {
+            font-size: 50px;
+        }
+
+        .hero {
+
+            &__links {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &__description {
+                line-height: 30px;
+            }
+
+            &__link {
+                max-width: fit-content;
+            }
+
+            &__link:first-child {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 590px) {
+    .hero {
+        margin-top: 70px;
+        margin-bottom: 70px;
     }
 }

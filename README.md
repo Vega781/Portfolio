@@ -6,7 +6,7 @@ This project serves as a showcase of my work and provides potential employers an
 ## 🚀 Features
 - **Dynamic Project Display**: Users can view various projects I have worked on, with detailed information about each one.
 - **Animations and Effects**: Various animations are used to enhance the user experience.
-<!-- - **📱 Responsive Design**: The portfolio is optimized for use on various devices, including mobile phones and tablets. -->
+- **Responsive Design**: The portfolio is optimized for use on various devices, including mobile phones and tablets.
 
 ## 🛠️ Technologies
 The project is developed using the following technologies:

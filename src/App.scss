@@ -1,17 +1,21 @@
 $max-width: 1580px;
-$padding: 2rem;
+
 
 #root {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    margin: 0 auto;
-    max-width: $max-width;
     width: 100%;
-    padding: $padding;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .centered {
     display: flex;
     justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
 }

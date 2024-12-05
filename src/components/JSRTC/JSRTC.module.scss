@@ -26,4 +26,16 @@
         color: #6104D6;
         margin-top: 40px;
     }
+
+    @media (max-width: 720px) {
+        &__container {
+            font-size: 50px;
+        }
+    }
+}
+
+@media (max-width: 590px) {
+    .jsrtc {
+        margin: 200px 0;
+    }
 }

@@ -14,7 +14,7 @@ interface ListEffectProps extends Effect {
 
 export const ListEffect: FC<ListEffectProps> = ({ children, className, uniqueKey }) => {
     return (
-        <motion.div
+        <motion.li
             className={className}
             key={uniqueKey}
             initial='hidden'
@@ -23,6 +23,6 @@ export const ListEffect: FC<ListEffectProps> = ({ children, className, uniqueKey
             viewport={{ once: true, amount: 0.3 }}
         >
             {children}
-        </motion.div>
+        </motion.li>
     )
 }

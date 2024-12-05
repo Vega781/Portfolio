@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     z-index: 100;
     background-color: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(10px);
@@ -15,6 +16,14 @@
 
     .nav__container {
         margin: 0 21px;
+    }
+
+    .nav__590 {
+        display: none
+    }
+
+    .gradient {
+        font-weight: 700;
     }
 
     .nav__link {
@@ -48,6 +57,48 @@
 
         &:first-child {
             margin-left: 0;
+        }
+    }
+
+    .burger__button {
+        display: none;
+    }
+
+    @media (max-width: 590px) {
+        .nav__container {
+            display: none;
+        }
+
+        .nav__590 {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 120%;
+            width: 80%;
+            z-index: 100;
+            background-color: rgb(43, 43, 43);
+            padding: 10px 12px;
+            margin: 0;
+            border-radius: 20px;
+        }
+
+        .nav__link {
+            text-align: center;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .burger__button {
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 21px;
+            // margin-left: 21px;
         }
     }
 }

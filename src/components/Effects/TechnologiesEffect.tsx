@@ -9,7 +9,7 @@ const technologiesVariants = {
 
 export const TechnologiesEffect: FC<Effect> = ({ children, className }) => {
     return (
-        <motion.div
+        <motion.ul
             className={className}
             initial="hidden"
             whileInView="visible"
@@ -17,6 +17,6 @@ export const TechnologiesEffect: FC<Effect> = ({ children, className }) => {
             viewport={{ once: true, amount: 0.3 }}
         >
             {children}
-        </motion.div>
+        </motion.ul>
     );
 }; 

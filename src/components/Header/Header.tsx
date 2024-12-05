@@ -1,19 +1,41 @@
 import { Link } from 'react-router-dom'
 import GradientText from '../Effects/GradientText'
 import styles from './Header.module.scss'
+import { useState } from 'react';
+import { BurgerEffect } from '../Effects/BurgerEffect';
 
 
 export const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleOpen = () => {
+        setIsOpen(!isOpen);
+    }
+
+    const handleClose = () => {
+        setIsOpen(false);
+    }
+
     return (
         <header className={styles.header}>
             <div className={styles.header__container}>
-                <nav className={styles.nav__container}>
-                    <Link to='/' className={styles.nav__link}>
-                        <GradientText text="Vega7" className={styles.nav__link} href="/" />
+                {isOpen && (
+                    <BurgerEffect isOpen={isOpen}>
+                        <Link to='/' className={styles.nav__link} onClick={handleClose}>
+                            <GradientText text="Vega7" className={styles.gradient} />
+                        </Link>
+                        <Link to="/projects" className={styles.nav__link} onClick={handleClose}>Projects</Link>
+                        <Link to="/experience" className={styles.nav__link} onClick={handleClose}>Experience</Link>
+                    </BurgerEffect>
+                )}
+
+                <div className={styles.nav__container}>
+                    <Link to='/' className={styles.nav__link} onClick={handleClose}>
+                        <GradientText text="Vega7" className={styles.gradient} />
                     </Link>
-                    <Link to="/projects" className={styles.nav__link}>Projects</Link>
-                    <Link to="/experience" className={styles.nav__link}>Experience</Link>
-                </nav>
+                    <Link to="/projects" className={styles.nav__link} onClick={handleClose}>Projects</Link>
+                    <Link to="/experience" className={styles.nav__link} onClick={handleClose}>Experience</Link>
+                </div>
                 <nav className={styles.social__links}>
                     <a href="https://github.com/Vega781" className={styles.social__link}>
                         <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,6 +60,13 @@ export const Header = () => {
                         </svg>
                     </a>
                 </nav>
+                <button className={styles.burger__button} onClick={handleOpen}>
+                    <svg className={styles.burger__svg} width="21" height="21" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 6H21" stroke="#B292FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M3 12H21" stroke="#B292FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M3 18H21" stroke="#B292FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                </button>
             </div>
         </header>
     )

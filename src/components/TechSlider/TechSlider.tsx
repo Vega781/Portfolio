@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 import { Icon } from '@iconify/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -11,7 +12,25 @@ export const TechSlider = () => {
         <Swiper
             modules={[Pagination]}
             spaceBetween={30}
-            slidesPerView={2.5}
+            slidesPerView={1}
+            breakpoints={{
+                700: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1200: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1440: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 30,
+                },
+            }}
             pagination={{ clickable: true }}
             className={styles.swiper}
         >

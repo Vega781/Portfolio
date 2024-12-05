@@ -11,8 +11,6 @@
     }
 
     &__item {
-        max-width: 1410px;
-        width: 100%;
         display: flex;
         flex-direction: row;
         gap: 100px;
@@ -24,7 +22,7 @@
     &__title {
         font-size: 28px;
         font-weight: 500;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
 
         &_description {
             display: block;
@@ -77,6 +75,34 @@
             font-size: 22px;
             font-weight: 500;
             margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .projects {
+        &__item {
+            border-radius: 40px;
+            padding: 40px 50px;
+            flex-direction: column;
+            gap: 60px;
+        }
+
+        &__left {
+            max-width: 100%;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .projects {
+        &__item {
+            border-radius: 40px;
+            padding: 30px 30px;
+            flex-direction: column;
+            gap: 60px;
         }
     }
 }
