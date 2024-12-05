@@ -12,7 +12,7 @@ export const Header = () => {
                         <GradientText text="Vega7" className={styles.nav__link} href="/" />
                     </Link>
                     <Link to="/projects" className={styles.nav__link}>Projects</Link>
-                    <Link to="/education" className={styles.nav__link}>Experience</Link>
+                    <Link to="/experience" className={styles.nav__link}>Experience</Link>
                 </nav>
                 <nav className={styles.social__links}>
                     <a href="https://github.com/Vega781" className={styles.social__link}>
