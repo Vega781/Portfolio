@@ -14,7 +14,7 @@ function App() {
             </div>
             <Routes>
                 <Route path='/' element={<MainPage />} />
-                <Route path='/education' element={<ExperiencePage />} />
+                <Route path='/experience' element={<ExperiencePage />} />
                 <Route path='/projects' element={<ProjectsPage />} />
             </Routes>
             <div className='centered'>
