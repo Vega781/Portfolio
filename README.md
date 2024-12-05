@@ -38,8 +38,6 @@ To run the project locally, follow these steps:
    npm run dev
    ```
 
-Now you can open your browser and go to `http://localhost:3000` to see your portfolio in action.
-
 ## 📜 License
 This project is licensed under the MIT License. For more information, see the LICENSE file.
 
