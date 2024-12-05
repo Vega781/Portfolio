@@ -8,7 +8,7 @@ import { ExperiencePage } from './pages/ExperiencePage'
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename='/Portfolio/'>
             <div className='centered'>
                 <Header />
             </div>
