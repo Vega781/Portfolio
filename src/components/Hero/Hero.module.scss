@@ -130,5 +130,9 @@
     .hero {
         margin-top: 70px;
         margin-bottom: 70px;
+
+        &__avatar {
+            border-radius: 50px;
+        }
     }
 }

@@ -14,7 +14,7 @@ export const TechnologiesEffect: FC<Effect> = ({ children, className }) => {
             initial="hidden"
             whileInView="visible"
             variants={technologiesVariants}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.1 }}
         >
             {children}
         </motion.ul>
