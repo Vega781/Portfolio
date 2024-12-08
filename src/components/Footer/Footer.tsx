@@ -9,7 +9,9 @@ export const Footer = () => {
             <footer className={styles.footer}>
                 <div className={styles.footer__container}>
                     <div className={styles.footer__left}>
-                        <GradientText text='Follow me' />
+                        <a href="https://fakecrime.bio/vega7">
+                            <GradientText text='Follow me' />
+                        </a>
                     </div>
                     <div className={styles.footer__right}>
                         <a href="https://github.com/Vega781" className={styles.social__link}>

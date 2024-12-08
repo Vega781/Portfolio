@@ -7,6 +7,7 @@ import { ProjectsPage } from './pages/ProjectsPage'
 import { ExperiencePage } from './pages/ExperiencePage'
 
 function App() {
+
     return (
         <BrowserRouter basename='/Portfolio/'>
             <div className='centered'>

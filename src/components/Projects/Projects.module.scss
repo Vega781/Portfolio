@@ -14,9 +14,13 @@
         display: flex;
         flex-direction: row;
         gap: 100px;
-        border: 1px solid #272727;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(19, 19, 19, 0.4);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         padding: 70px 80px;
         border-radius: 80px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
     }
 
     &__title {
@@ -57,9 +61,9 @@
         flex-direction: column;
         justify-content: space-between;
         max-width: 350px;
-        width: 100%;
+        // width: 100%;
     }
-
+    
     &__right {
         max-width: 800px;
     }

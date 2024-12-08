@@ -16,7 +16,7 @@ export const Hero = () => {
                     <HeroLeft>
                         <h1 className={styles.hero__title}>Hi, I'm Max</h1>
                         <p className={styles.hero__description}>
-                            <span className={styles.whiteText}>Software Developer</span> working with React and modern web technologies. My experience includes building responsive interfaces, collaborating on feature development, and implementing modern development practices.
+                            <span className={styles.whiteText}>Software Developer</span> focused on building scalable web applications with React and TypeScript. Experienced in component-driven development, state management, and modern frontend practices. Currently expanding into full-stack development.
                         </p>
                         <div className={styles.hero__links}>
                             <a href="https://hh.ru/resume_converter/Анисенко%20Максим%20Андреевич.pdf?hash=ef39ebb2ff0d13a02c0039ed1f577968764970&type=pdf&hhtmSource=resume&hhtmFrom=resume_list" className={styles.hero__link}>Download CV</a>

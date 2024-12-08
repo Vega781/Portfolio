@@ -27,7 +27,7 @@ export const TechSlider = () => {
                     spaceBetween: 20,
                 },
                 1440: {
-                    slidesPerView: 2.5,
+                    slidesPerView: 3,
                     spaceBetween: 30,
                 },
             }}

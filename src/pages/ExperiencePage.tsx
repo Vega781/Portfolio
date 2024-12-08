@@ -7,7 +7,7 @@ export const ExperiencePage = () => {
             <ExperienceEffect className={styles.experience__container}>
                 <h1 className={styles.experience__title}>Experience</h1>
                 <p className={styles.experience__text}>
-                    Unfortunately, I currently have no commercial development experience. However, I am a quick learner with a keen interest in technology and software development. I am eager to apply my skills and knowledge in a professional setting and am committed to continuous learning and growth.
+                I am at the start of my development career, currently building practical experience through personal projects and open-source contributions. My strong foundation in React, TypeScript, and modern web development practices demonstrates my commitment to writing quality code. I am actively seeking my first commercial role where I can apply my technical skills and grow as a professional developer.
                 </p>
             </ExperienceEffect>
         </div>
