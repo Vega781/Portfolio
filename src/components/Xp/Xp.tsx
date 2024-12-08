@@ -6,9 +6,9 @@ export const Xp = () => {
         <section className={styles.xp}>
             <div className={styles.xp__container}>
                 <div className={styles.xp__left}>
-                    <span className={styles.xp__years}>1.5 years of</span>
+                    <span className={styles.xp__years}>1 year of</span>
                     <h2 className={styles.xp__title}>XP</h2>
-                    <span className={styles.xp__description}>with the most popular ecosystems frontend</span>
+                    <span className={styles.xp__description}>with the most popular frontend ecosystems</span>
                 </div>
                 <div className={styles.xp__right}>
                     <TechSlider />
