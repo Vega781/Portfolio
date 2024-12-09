@@ -1,0 +1,1 @@
+export const cv = 'https://cv.hexlet.io/ru/resumes/13626/pdfs/base'
