@@ -53,10 +53,10 @@ export const devops = [
         icon: "logos:docker-icon",
         name: "Docker",
     },
-    {
-        icon: "logos:kubernetes",
-        name: "Kubernetes",
-    },
+    // {
+    //     icon: "logos:kubernetes",
+    //     name: "Kubernetes",
+    // },
 ];
 
 export const databases = [
@@ -83,12 +83,12 @@ export const backEnd = [
         icon: "logos:nodejs-icon",
         name: "Node.js",
     },
-    {
-        icon: "simple-icons:express",
-        name: "Express",
-    },
-    {
-        icon: "logos:postman",
-        name: "Postman",
-    },
+    // {
+    //     icon: "simple-icons:express",
+    //     name: "Express",
+    // },
+    // {
+    //     icon: "logos:postman",
+    //     name: "Postman",
+    // },
 ];
