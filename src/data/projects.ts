@@ -2,7 +2,7 @@ export const projects = [
     {
         name: 'VK Marusya',
         description: 'VK Marusya is a comprehensive web application designed for movie enthusiasts. It allows users to view detailed movie information, search for movies by title, and browse by genres. The application features user authorization, enabling personalized experiences such as adding movies to favorites. It also includes a responsive design for optimal viewing on various devices. The project is built using modern web technologies including React, TypeScript, and Redux Toolkit, ensuring a robust and scalable architecture.',
-        technologies: ['React', 'TypeScript', 'Redux Toolkit', 'React Query', 'React Router', 'Axios', 'Zod', 'Vite'],
+        technologies: ['React', 'TypeScript', 'Redux Toolkit', 'TanStack Query', 'React Router', 'Axios', 'Zod', 'Vite'],
         link: 'https://github.com/Vega781/vk-marusya',
         url: 'https://vega781.github.io/vk-marusya',
     },

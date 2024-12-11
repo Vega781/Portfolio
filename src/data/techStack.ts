@@ -1,14 +1,3 @@
-export const publications = [
-    {
-        icon: "logos:apple",
-        name: "App Store",
-    },
-    {
-        icon: "logos:google-play",
-        name: "Play Store",
-    },
-];
-
 export const frontEndEngineerDesign = [
     {
         icon: "logos:react",
@@ -23,24 +12,20 @@ export const frontEndEngineerDesign = [
         name: "Redux",
     },
     {
+        icon: "logos:astro",
+        name: "Astro",
+    },
+    {
+        icon: "logos:tailwindcss-icon",
+        name: "Tailwind",
+    },
+    {
         icon: "logos:vitejs",
         name: "Vite",
     },
     {
-        icon: "logos:jest",
-        name: "Jest",
-    },
-    {
-        icon: "logos:cypress-icon",
-        name: "Cypress",
-    },
-    // {
-    //     icon: "logos:axios",
-    //     name: "Axios",
-    // },
-    {
-        icon: "logos:tailwindcss-icon",
-        name: "Tailwind",
+        icon: "logos:webpack",
+        name: "Webpack",
     },
 ];
 
@@ -68,6 +53,10 @@ export const devops = [
         icon: "logos:docker-icon",
         name: "Docker",
     },
+    {
+        icon: "logos:kubernetes",
+        name: "Kubernetes",
+    },
 ];
 
 export const databases = [
@@ -79,23 +68,27 @@ export const databases = [
         icon: "logos:mongodb",
         name: "MongoDB",
     },
+    {
+        icon: "logos:sqlite",
+        name: "SQLite",
+    },
 ];
 
 export const backEnd = [
     {
+        icon: "logos:flask",
+        name: "Flask",
+    },
+    {
         icon: "logos:nodejs-icon",
         name: "Node.js",
     },
-    // {
-    //     icon: "simple-icons:express",
-    //     name: "Express",
-    // },
-    // {
-    //     icon: "logos:postman",
-    //     name: "Postman",
-    // },
     {
-        icon: "logos:flask",
-        name: "Flask",
+        icon: "simple-icons:express",
+        name: "Express",
+    },
+    {
+        icon: "logos:postman",
+        name: "Postman",
     },
 ];

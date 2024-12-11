@@ -16,11 +16,11 @@ export const TechnologiesUsed = () => {
                     <StackList technologies={languages} liClassName={styles.list__li} iconContainerClassName={styles.icon__container} iconClassName={styles.li__icon} />
                 </li>
                 <li className={`${styles.technologies__frontend} ${styles.technologies__item}`}>
-                    <span className={styles.technologies__block_title}>Front-end Engineer Design</span>
+                    <span className={styles.technologies__block_title}>Front-end</span>
                     <StackList technologies={frontEndEngineerDesign} liClassName={styles.list__li} iconContainerClassName={styles.icon__container} iconClassName={styles.li__icon} />
                 </li>
                 <li className={`${styles.technologies__backend} ${styles.technologies__item}`}>
-                    <span className={styles.technologies__block_title}>Back-end Engineer</span>
+                    <span className={styles.technologies__block_title}>Back-end</span>
                     <StackList technologies={backEnd} liClassName={styles.list__li} iconContainerClassName={styles.icon__container} iconClassName={styles.li__icon} />
                 </li>
                 <li className={`${styles.technologies__databases} ${styles.technologies__item}`}>

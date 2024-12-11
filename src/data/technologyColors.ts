@@ -91,6 +91,10 @@ export const technologyColors = {
         bgColor: "#000000",
         gradient: 'linear-gradient(135deg, #000000, #333333, #666666)',
     },
+    TanStackQuery: {
+        bgColor: "#FF5733",
+        gradient: 'linear-gradient(135deg, #FF5733, #FF8D1A, #FFC300)',
+    },
     ReactQuery: {
         bgColor: "#FF4154",
         gradient: 'linear-gradient(135deg, #FF4154, #FF6F61, #FF8A80)',
