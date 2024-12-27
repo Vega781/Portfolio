@@ -19,7 +19,7 @@ export const projects = [
         name: 'This Portfolio',
         description: "This is Vega7's personal portfolio, presenting various projects and skills in web development. It includes detailed examples of work completed in different areas of the field. The portfolio serves as a resource for potential employers and clients to assess Vega7's capabilities.",
         technologies: ['React', 'TypeScript', 'React Router', 'GreenSock', 'Vite'],
-        favicon: 'https://raw.githubusercontent.com/Vega781/portfolio/master/public/code.png',
+        favicon: 'https://raw.githubusercontent.com/Vega781/portfolio/master/public/favicon.png',
         link: 'https://github.com/Vega781/portfolio',
     }
 ];
