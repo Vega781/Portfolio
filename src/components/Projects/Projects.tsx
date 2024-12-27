@@ -11,9 +11,12 @@ export const Projects = () => {
                     <ListEffect className={styles.projects__item} uniqueKey={index} key={index}>
                         <div className={styles.projects__left}>
                             <div className={styles.projects__top}>
-                                <h3 className={styles.projects__title}>
-                                    {item.name}
-                                </h3>
+                                <div className={styles.title__container}>
+                                    <img src={item.favicon} alt="Project Icon" className={styles.projects__icon} />
+                                    <h3 className={styles.projects__title}>
+                                        {item.name}
+                                    </h3>
+                                </div>
                                 <ul className={styles.technologies__list}>
                                     {item.technologies.map((tech, idx) => (
                                         <li className={styles.technologies__item} style={{ backgroundColor: getTechColor(tech).bgColor }} key={idx}>

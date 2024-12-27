@@ -2,7 +2,7 @@ import '../../App.scss'
 import styles from './Footer.module.scss'
 import { currentDate } from '../../utils/currenDate'
 import GradientText from '../Effects/GradientText'
-import { socialLinks } from '../../utils/socialLinks'
+import { socialLinks } from '../../data/socialLinks'
 
 export const Footer = () => {
     return (

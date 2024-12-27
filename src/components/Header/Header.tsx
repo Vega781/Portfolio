@@ -3,7 +3,7 @@ import GradientText from '../Effects/GradientText'
 import styles from './Header.module.scss'
 import { useState } from 'react';
 import { BurgerEffect } from '../Effects/BurgerEffect';
-import { socialLinks } from '../../utils/socialLinks';
+import { socialLinks } from '../../data/socialLinks';
 
 
 export const Header = () => {
