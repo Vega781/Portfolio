@@ -51,7 +51,7 @@ export const technologyColors = {
         bgColor: "#17202C",
         gradient: 'linear-gradient(135deg, #17202C, #34495E, #2C3E50)',
     },
-    Tailwind: {
+    TailwindCSS: {
         bgColor: "#38B2AC",
         gradient: 'linear-gradient(135deg, #38B2AC, #319795, #2C7A7B)',
     },
