@@ -1,8 +1,5 @@
 import styles from './TechnologiesUsed.module.scss'
-import { databases, frontEndEngineerDesign } from "../../data/techStack"
-import { backEnd } from "../../data/techStack"
-import { languages } from "../../data/techStack"
-import { devops } from "../../data/techStack"
+import { frameworks, technologies, languages, styling, others } from "../../data/technologies"
 import { StackList } from '../StackList/StackList'
 import { TechnologiesEffect } from '../Effects/TechnologiesEffect'
 
@@ -15,25 +12,25 @@ export const TechnologiesUsed = () => {
                     <span className={styles.technologies__block_title}>Languages</span>
                     <StackList technologies={languages} liClassName={styles.list__li} iconContainerClassName={styles.icon__container} iconClassName={styles.li__icon} />
                 </li>
+                <li className={`${styles.frameworks__frontend} ${styles.technologies__item}`}>
+                    <span className={styles.technologies__block_title}>Frameworks</span>
+                    <StackList technologies={frameworks} liClassName={styles.list__li} iconContainerClassName={styles.icon__container} iconClassName={styles.li__icon} />
+                </li>
                 <li className={`${styles.technologies__frontend} ${styles.technologies__item}`}>
-                    <span className={styles.technologies__block_title}>Front-end</span>
-                    <StackList technologies={frontEndEngineerDesign} liClassName={styles.list__li} iconContainerClassName={styles.icon__container} iconClassName={styles.li__icon} />
+                    <span className={styles.technologies__block_title}>Technologies</span>
+                    <StackList technologies={technologies} liClassName={styles.list__li} iconContainerClassName={styles.icon__container} iconClassName={styles.li__icon} />
                 </li>
                 <li className={`${styles.technologies__backend} ${styles.technologies__item}`}>
-                    <span className={styles.technologies__block_title}>Back-end</span>
-                    <StackList technologies={backEnd} liClassName={styles.list__li} iconContainerClassName={styles.icon__container} iconClassName={styles.li__icon} />
+                    <span className={styles.technologies__block_title}>Styling</span>
+                    <StackList technologies={styling} liClassName={styles.list__li} iconContainerClassName={styles.icon__container} iconClassName={styles.li__icon} />
                 </li>
-                <li className={`${styles.technologies__databases} ${styles.technologies__item}`}>
-                    <span className={styles.technologies__block_title}>Databases</span>
-                    <StackList technologies={databases} liClassName={styles.list__li} iconContainerClassName={styles.icon__container} iconClassName={styles.li__icon} />
-                </li>
-                <li className={`${styles.technologies__devops} ${styles.technologies__item}`}>
-                    <span className={styles.technologies__block_title}>Devops</span>
-                    <StackList technologies={devops} liClassName={styles.list__li} iconContainerClassName={styles.icon__container} iconClassName={styles.li__icon} />
+                <li className={`${styles.technologies__backend} ${styles.technologies__item}`}>
+                    <span className={styles.technologies__block_title}>Other</span>
+                    <StackList technologies={others} liClassName={styles.list__li} iconContainerClassName={styles.icon__container} iconClassName={styles.li__icon} />
                 </li>
                 <li className={`${styles.technologies__1200} ${styles.technologies__item}`}>
-                    <span className={styles.technologies__block_title}>Front-end Engineer Design</span>
-                    <StackList technologies={frontEndEngineerDesign} liClassName={styles.list__li} iconContainerClassName={styles.icon__container} iconClassName={styles.li__icon} />
+                    <span className={styles.technologies__block_title}>Technologies</span>
+                    <StackList technologies={technologies} liClassName={styles.list__li} iconContainerClassName={styles.icon__container} iconClassName={styles.li__icon} />
                 </li>
             </TechnologiesEffect>
         </section>

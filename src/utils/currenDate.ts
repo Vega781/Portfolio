@@ -1,1 +1,1 @@
-export const currentDate = new Date().getFullYear()
+export const currentDate = new Date().getFullYear();

@@ -57,6 +57,13 @@
         }
     }
 
+    @media (max-width: 1024px) {
+        &__container {
+            gap: 30px;
+            
+        }
+    }
+
     @media (max-width: 520px) {
         &__title {
             font-size: 40px;
@@ -76,7 +83,7 @@
     width: 25px;
     height: 25px;
     padding: 10px;
-    background-color: #272727;
+    background-image: linear-gradient(135deg, #778899, #8b9aaa, #dcdcdc);
     border-radius: 100px;
     display: flex;
     align-items: center;

@@ -1,11 +1,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { Icon } from '@iconify/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import styles from './TechSlider.module.scss';
-import { technologies } from '../../data/technologies';
+import { techslider } from '../../data/technologies';
+import { getTechIconUrl } from '../../utils/getTechIconUrl';
 
 export const TechSlider = () => {
     return (
@@ -34,13 +34,14 @@ export const TechSlider = () => {
             pagination={{ clickable: true }}
             className={styles.swiper}
         >
-            {technologies.map((tech, index) => (
+            {techslider.map((tech, index) => (
                 <SwiperSlide key={index}>
                     <div
                         className={styles.slide}
                         style={{ background: tech.gradient }}
                     >
-                        <Icon icon={tech.icon} className={styles.icon} />
+                        <img src={getTechIconUrl(tech.icon)} alt={tech.name} className={styles.icon} />
+                        {/* <Icon icon={tech.icon} className={styles.icon} /> */}
                         <div className={styles.name}>{tech.name}</div>
                     </div>
                 </SwiperSlide>

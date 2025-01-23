@@ -1,5 +1,9 @@
-import { technologyColors } from "../data/technologyColors";
+import { techData } from "../data/technologies";
 
 export function getTechColor(tech: string) {
-    return technologyColors[(tech.replace(/\s+/g, '').replace(/\./g, '')) as keyof typeof technologyColors];
+    const normalizedTech = tech.toLowerCase().replace(/\s+/g, '').replace(/\./g, '');
+    const techEntry = Object.values(techData).find(t => 
+        t.name.toLowerCase().replace(/\s+/g, '').replace(/\./g, '') === normalizedTech
+    );
+    return techEntry?.bgColor || techEntry?.gradient || 'gray';
 }

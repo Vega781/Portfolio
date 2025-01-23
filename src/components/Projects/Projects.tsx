@@ -1,8 +1,9 @@
 import styles from './Projects.module.scss'
 import { projects } from '../../data/projects'
-import { getTechColor } from '../../utils/getTechColor'
 import { ListEffect } from '../Effects/Projects/ListEffect'
 import { getTechIconUrl } from '../../utils/getTechIconUrl'
+import { getTechColor } from '../../utils/getTechColor'
+// import { techData } from '../../data/technologies'
 
 export const Projects = () => {
     return (
@@ -20,7 +21,7 @@ export const Projects = () => {
                                 </div>
                                 <ul className={styles.technologies__list}>
                                     {item.technologies.map((tech, idx) => (
-                                        <li className={styles.technologies__item} style={{ backgroundColor: getTechColor(tech).bgColor }} key={idx}>
+                                        <li className={styles.technologies__item} style={{ backgroundColor: getTechColor(tech) }} key={idx}>
                                             <img src={getTechIconUrl(tech)} alt={`${tech} icon`} className={styles.technology__icon} />
                                             <span className={styles.technology__span}>{tech}</span>
                                         </li>
