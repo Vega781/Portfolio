@@ -11,7 +11,7 @@ export const ProjectsPage = () => {
                     <span className={styles.page__title}>
                         &lt; Here, you can know me a little more and see my projects /&gt;
                     </span>
-                    <a href={socialLinks.hexlet} className={styles.cv__link}>Download CV</a>
+                    <a href={socialLinks.hh} className={styles.cv__link}>Download CV</a>
                 </div>
             </ExperienceEffect>
             <Projects />

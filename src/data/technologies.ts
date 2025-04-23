@@ -176,7 +176,6 @@ export const techData: { [key: string]: Technology } = {
     },   
 };
 
-// Export categorized arrays
 export const languages = [
     techData.javascript,
     techData.typescript,
@@ -196,15 +195,15 @@ export const technologies = [
     techData.reactquery,
     techData.zod,
     techData.axios,
-    techData.graphql,
+    // techData.graphql,
 ];
 
 export const styling = [
     techData.sass,
     techData.tailwind,
     techData.greensock,
-    techData.materialui,
-    techData.antdesign,
+    // techData.materialui,
+    // techData.antdesign,
 ];
 
 export const testing = [
@@ -224,7 +223,6 @@ export const others = [
     techData.mongodb,
 ];
 
-// Export full list for slider
 export const techslider = [
     techData.javascript,
     techData.typescript,

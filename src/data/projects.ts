@@ -1,4 +1,13 @@
+import cloudgram from "../assets/cloudgram.png";
+
 export const projects = [
+    {
+        name: 'Cloudgram',
+        description: 'Cloudgram is a web application that allows users to upload and share files. It supports user authentication, image uploading, and responsive design. Cloudgram is also connected to your Telegram account, which ensures smooth integration. The platform is designed with an emphasis on simplicity and ease of use, making it accessible to users of all technical levels.',
+        technologies: ['React', 'TypeScript', 'Redux', 'React Router', 'React Query', 'Axios', 'Zod', 'Vite'],
+        favicon: cloudgram,
+        url: 'https://cloudgram.online/',
+    },
     {
         name: 'VK Marusya',
         description: 'VK Marusya is a comprehensive web application designed for movie enthusiasts. It allows users to view detailed movie information, search for movies by title, and browse by genres. The application features user authorization, enabling personalized experiences such as adding movies to favorites. It also includes a responsive design for optimal viewing on various devices. The project is built using modern web technologies including React, TypeScript, and Redux Toolkit, ensuring a robust and scalable architecture.',
