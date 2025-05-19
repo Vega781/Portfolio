@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import './App.scss'
 import { Footer } from './components/Footer/Footer'
 import { Header } from './components/Header/Header'
@@ -9,7 +9,7 @@ import { ExperiencePage } from './pages/ExperiencePage'
 function App() {
 
     return (
-        <BrowserRouter basename='/Portfolio/'>
+        <HashRouter>
             <div className='centered'>
                 <Header />
             </div>
@@ -21,7 +21,7 @@ function App() {
             <div className='centered'>
                 <Footer />
             </div>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 

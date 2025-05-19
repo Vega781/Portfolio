@@ -158,7 +158,7 @@ export const techData: { [key: string]: Technology } = {
     },
     materialui: {
         icon: "mui",
-        name: "Material UI",
+        name: "MUI",
         bgColor: "#0081CB",
         gradient: 'linear-gradient(135deg, #0081CB, #00B0FF, #40C4FF)',
     },
@@ -173,7 +173,25 @@ export const techData: { [key: string]: Technology } = {
         name: "GraphQL",
         bgColor: "#E535AB",
         gradient: 'linear-gradient(135deg, #E535AB, #F20082, #C30052)',
-    },   
+    },
+    storybook: {
+        icon: "storybook",
+        name: "Storybook",
+        bgColor: "#FF4785",
+        gradient: 'linear-gradient(135deg, #FF4785, #FF6B6B, #FF8585)',
+    },
+    vitest: {
+        icon: "vitest",
+        name: "Vitest",
+        bgColor: "#729B1B",
+        gradient: 'linear-gradient(135deg, #729B1B, #98C379, #B5E853)',
+    },
+    playwright: {
+        icon: "playwright",
+        name: "Playwright",
+        bgColor: "#2EAD33",
+        gradient: 'linear-gradient(135deg, #2EAD33, #45B649, #96E6A1)',
+    },
 };
 
 export const languages = [
@@ -208,7 +226,10 @@ export const styling = [
 
 export const testing = [
     techData.jest,
-    techData.cypress
+    techData.cypress,
+    techData.vitest,
+    techData.playwright,
+    techData.storybook,
 ];
 
 export const bundlers = [

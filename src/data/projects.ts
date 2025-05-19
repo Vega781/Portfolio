@@ -4,7 +4,7 @@ export const projects = [
     {
         name: 'Cloudgram',
         description: 'Cloudgram is a web application that allows users to upload and share files. It supports user authentication, image uploading, and responsive design. Cloudgram is also connected to your Telegram account, which ensures smooth integration. The platform is designed with an emphasis on simplicity and ease of use, making it accessible to users of all technical levels.',
-        technologies: ['React', 'TypeScript', 'Redux', 'React Router', 'React Query', 'Axios', 'Zod', 'Vite'],
+        technologies: ['React', 'TypeScript', 'Redux', 'React Router', 'React Query', 'Axios', 'Zod', 'GreenSock', 'MUI', 'Storybook', 'Vitest', 'Cypress', 'Vite'],
         favicon: cloudgram,
         url: 'https://cloudgram.online/',
     },
