@@ -1,0 +1,190 @@
+$header-hover-color: #535bf2;
+
+.experience {
+    width: 100%;
+    height: 100%;
+    margin-top: 150px;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+        padding: 70px;
+        border-radius: 80px;
+        background-color: #131313;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: white;
+        min-height: 350px;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        &__description {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+    }
+
+    &__role {
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    &__period {
+        display: flex;
+        flex-direction: column;
+        color: #6f6f6f;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    &__type {
+        color: #b292ff;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    &__technologies {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        &__item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 5px 10px;
+            border-radius: 100px;
+            gap: 7px;
+        }
+
+        &__icon {
+            margin: 0;
+            padding: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+        }
+
+        &__span {
+            display: flex;
+            flex-wrap: nowrap;
+            font-size: 15px;
+            font-weight: 600;
+            color: black;
+        }
+    }
+
+    &__responsibilities {
+        font-size: 18px;
+        color: #6f6f6f;
+        font-weight: 300;
+        line-height: 42px;
+    }
+
+    &__company {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin: 0;
+        font-size: 22px;
+        font-weight: 700;
+        width: fit-content;
+        color: #b292ff;
+        border: 1px solid white;
+        border-radius: 100px;
+        padding: 15px;
+
+        &__favicon {
+            max-width: 25px;
+            height: 25px;
+        }
+    }
+
+    &__urls {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    &__source {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+        color: #b292ff;
+        border-radius: 100px;
+        padding: 5px 10px;
+        transition: color 0.1s ease-in-out;
+        transition: background 0.1s ease-in-out;
+
+        &:visited {
+            color: #b292ff; // тот же цвет, что и обычная ссылка
+        }
+
+        &:hover {
+            background-color: var(--color-header-hover);
+            color: white;
+
+            svg path {
+                fill: white;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .experience {
+        &__item {
+            flex-direction: column;
+            border-radius: 40px;
+            padding: 30px;
+            gap: 80px;
+        }
+
+        &__left {
+            max-width: 100%;
+            align-items: start;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .experience {
+        &__left {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}

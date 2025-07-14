@@ -59,6 +59,23 @@
         gap: 10px;
         color: #b292ff;
         font-size: 22px;
+        border-radius: 100px;
+        padding: 5px 10px;
+        transition: color 0.1s ease-in-out;
+        transition: background 0.1s ease-in-out;
+
+        &:visited {
+            color: #b292ff; // тот же цвет, что и обычная ссылка
+        }
+
+        &:hover {
+            background-color: var(--color-header-hover);
+            color: white;
+
+            svg path {
+                fill: white;
+            }
+        }
     }
 
     &__left {
@@ -67,7 +84,7 @@
         flex-direction: column;
         justify-content: space-between;
         max-width: 350px;
-        // width: 100%;
+        width: 100%;
     }
 
     &__right {
@@ -121,7 +138,6 @@
 }
 
 .technology {
-
     &__span {
         font-size: 15px;
         font-weight: 600;

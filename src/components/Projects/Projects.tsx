@@ -3,7 +3,6 @@ import { projects } from '../../data/projects'
 import { ListEffect } from '../Effects/Projects/ListEffect'
 import { getTechIconUrl } from '../../utils/getTechIconUrl'
 import { getTechColor } from '../../utils/getTechColor'
-// import { techData } from '../../data/technologies'
 
 export const Projects = () => {
     return (

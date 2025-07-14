@@ -192,18 +192,25 @@ export const techData: { [key: string]: Technology } = {
         bgColor: "#2EAD33",
         gradient: 'linear-gradient(135deg, #2EAD33, #45B649, #96E6A1)',
     },
+    go: {
+        icon: "go",
+        name: "Golang",
+        bgColor: "#00ADD8",
+        gradient: 'linear-gradient(135deg, #00ADD8, #00CFFF, #A7F6FF)',
+    },
 };
 
 export const languages = [
-    techData.javascript,
+    // techData.javascript,
     techData.typescript,
-    techData.python
+    techData.python,
+    // techData.go,
 ];
 
 export const frameworks = [
     techData.react,
     techData.nextjs,
-    techData.astro
+    techData.astro,
 ];
 
 export const technologies = [
@@ -220,21 +227,21 @@ export const styling = [
     techData.sass,
     techData.tailwind,
     techData.greensock,
-    // techData.materialui,
+    techData.materialui,
     // techData.antdesign,
 ];
 
 export const testing = [
     techData.jest,
     techData.cypress,
-    techData.vitest,
-    techData.playwright,
-    techData.storybook,
+    // techData.vitest,
+    // techData.playwright,
+    // techData.storybook,
 ];
 
 export const bundlers = [
     techData.vite,
-    techData.webpack
+    techData.webpack,
 ];
 
 export const others = [

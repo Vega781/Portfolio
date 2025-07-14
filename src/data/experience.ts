@@ -1,0 +1,56 @@
+import cloudgram from "../assets/cloudgram.png";
+
+export const experience = [
+  {
+    company: 'Cloudgram',
+    favicon: cloudgram,
+    role: 'Frontend Developer',
+    period: 'October 2024 — May 2025',
+    employmentType: 'Full-time',
+    location: 'Moscow, Russia',
+    description: `Cloudgram is a web application for managing files stored in Telegram via a special bot. Users can upload, view, delete, and download files through a simple interface. The project is built as a Single Page Application (SPA) with authentication, filtering, drag-and-drop, premium features, and integration with a backend API.`,
+    responsibilities: [
+        'Configured project structure using the Feature-Sliced Design (FSD) approach',
+        'Implemented routing with React Router',
+      'Developed UI components: authentication, file list, file upload, user profile card',
+      'Integrated backend API using TanStack Query and Axios',
+      'Implemented file filtering and view mode switching using Redux Toolkit',
+      'Separated free and premium features (e.g. folder settings and priority uploads)',
+      'Implemented drag-and-drop for folder organization',
+      'Added basic type validation with Zod',
+      'Participated in interface design based on a Figma prototype',
+    ],
+    technologies: [
+      'React',
+      'TypeScript',
+      'Redux',
+      'React Query',
+      'Axios',
+      'React Router',
+      'Zod',
+      'MUI',
+      'GreenSock',
+      'Vite',
+    ],
+    url: 'https://cloudgram.online/',
+},
+{
+    company: 'SpaRcle Studio',
+    favicon: 'https://raw.githubusercontent.com/SpaRcle-Studio/sparcles/master/public/logos/logo.png',
+    role: 'Frontend Developer',
+    period: 'June 2024 — January 2025',
+    employmentType: 'Full-time',
+    location: 'Moscow, Russia',
+    description: `SpaRcle Studio is a landing page for a game engine. The site was designed and developed from scratch using Astro. All UI design and layout were done independently. The project was maintained through GitHub with tasks, pull requests, and discussions.`,
+    responsibilities: [
+      'Designed the entire site UI/UX',
+      'Built pages and components with Tailwind CSS',
+      'Set up the project using Astro',
+      'Collaborated via GitHub: pull requests, issues, discussions',
+      'Maintained and improved the project structure',
+    ],
+    technologies: ['Astro', 'JavaScript', 'TypeScript', 'TailwindCSS'],
+    url: 'https://sparcles.dev/',
+    github: 'https://github.com/SpaRcle-Studio/sparcles',
+  }
+];

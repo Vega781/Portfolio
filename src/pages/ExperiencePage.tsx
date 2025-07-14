@@ -1,15 +1,20 @@
 import { ExperienceEffect } from '../components/Effects/ExperienceEffect'
+import { ExperienceList } from '../components/ExperienceList/ExperienceList'
 import styles from '../styles/ExperiencePage.module.scss'
+import { socialLinks } from '../data/socialLinks'
 
 export const ExperiencePage = () => {
     return (
-        <div className={styles.experience}>
+        <div className={styles.experience__page}>
             <ExperienceEffect className={styles.experience__container}>
-                <h1 className={styles.experience__title}>Experience</h1>
-                <p className={styles.experience__text}>
-                I am at the start of my development career, currently building practical experience through personal projects and open-source contributions. My strong foundation in React, TypeScript, and modern web development practices demonstrates my commitment to writing quality code. I am actively seeking my first commercial role where I can apply my technical skills and grow as a professional developer.
-                </p>
+                <div className={styles.content__top}>
+                    <span className={styles.page__title}>
+                        &lt;Here, you can know me a little more and see <br /> my whole experience as a Frontend Software Engineer. /&gt;
+                    </span>
+                    <a href={socialLinks.hh} className={styles.cv__link}>Download CV</a>
+                </div>
             </ExperienceEffect>
+            <ExperienceList />
         </div>
     )
 }

@@ -15,6 +15,7 @@ export const Header = () => {
 
     const handleClose = () => {
         setIsOpen(false);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     return (
@@ -30,13 +31,13 @@ export const Header = () => {
                     </BurgerEffect>
                 )}
 
-                <div className={styles.nav__container}>
+                <nav className={styles.nav__container}>
                     <Link to='/' className={styles.nav__link} onClick={handleClose}>
                         <GradientText text="Vega7" className={styles.gradient} />
                     </Link>
                     <Link to="/projects" className={styles.nav__link} onClick={handleClose}>Projects</Link>
                     <Link to="/experience" className={styles.nav__link} onClick={handleClose}>Experience</Link>
-                </div>
+                </nav>
                 <nav className={styles.social__links}>
                     <a href={socialLinks.github} className={styles.social__link} target='_blank'>
                         <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">

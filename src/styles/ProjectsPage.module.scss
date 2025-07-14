@@ -11,7 +11,7 @@
             font-size: 24px;
             line-height: 48px;
             font-weight: 300;
-            color: #C8C8C8;
+            color: #c8c8c8;
             margin-bottom: 40px;
             text-align: center;
         }
@@ -21,6 +21,11 @@
             background-color: #fff;
             color: #000;
             border-radius: 100px;
+            transition: background 0.1s ease-in-out;
+
+            &:hover {
+                background-color: #bebebe;
+            }
         }
     }
 }

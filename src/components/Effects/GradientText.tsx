@@ -20,11 +20,10 @@ interface GradientTextProps {
     href?: string;
 }
 
-const GradientText: React.FC<GradientTextProps> = ({ text, className, href }) => {
+const GradientText: React.FC<GradientTextProps> = ({ text, className }) => {
     return (
-        <motion.a
+        <motion.span
             className={className}
-            href={href}
             style={{
                 background: 'linear-gradient(90deg, #B292FF, #007BFF, #40E0D0, #B292FF)', // Цвета градиента
                 backgroundSize: '200% 200%', // Размер фона для анимации
@@ -37,7 +36,7 @@ const GradientText: React.FC<GradientTextProps> = ({ text, className, href }) =>
             animate="animate" // Запускаем анимацию
         >
             {text}
-        </motion.a>
+        </motion.span>
     );
 };
 

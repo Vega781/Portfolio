@@ -1,7 +1,11 @@
+$header-color: #646cff;
+$header-hover-color: #535bf2;
+$text-color: #b292ff;
+
 .header {
-    position: relative;
+    position: fixed;
     z-index: 100;
-    background-color: rgba(255, 255, 255, 0.12);
+    background-color: rgba(190, 190, 190, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding: 10px 12px;
@@ -19,7 +23,7 @@
     }
 
     .nav__590 {
-        display: none
+        display: none;
     }
 
     .gradient {
@@ -29,6 +33,9 @@
     .nav__link {
         margin: 0 21px;
         font-weight: 700;
+        padding: 5px 10px;
+        border-radius: 100px;
+        transition: color 0.1s ease-in-out;
 
         &:last-child {
             margin-right: 0;
@@ -36,6 +43,10 @@
 
         &:first-child {
             margin-left: 0;
+        }
+
+        &:hover {
+            color: white;
         }
     }
 
@@ -57,6 +68,12 @@
 
         &:first-child {
             margin-left: 0;
+        }
+
+        &:hover {
+            svg path {
+                fill: white;
+            }
         }
     }
 

@@ -5,7 +5,7 @@ import styles from '../styles/ProjectsPage.module.scss'
 
 export const ProjectsPage = () => {
     return (
-        <section className={styles.projectsPage}>
+        <div className={styles.projectsPage}>
             <ExperienceEffect>
                 <div className={styles.content__top}>
                     <span className={styles.page__title}>
@@ -15,6 +15,6 @@ export const ProjectsPage = () => {
                 </div>
             </ExperienceEffect>
             <Projects />
-        </section>
+        </div>
     )
 }
