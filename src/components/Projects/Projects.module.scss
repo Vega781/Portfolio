@@ -78,6 +78,13 @@
         }
     }
 
+    &__indev {
+        font-size: 20px;
+        color: #f39c12;
+        font-weight: 500;
+        font-style: italic;
+    }
+
     &__left {
         gap: 70px;
         display: flex;

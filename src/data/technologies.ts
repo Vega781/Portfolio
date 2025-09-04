@@ -198,25 +198,62 @@ export const techData: { [key: string]: Technology } = {
         bgColor: "#00ADD8",
         gradient: 'linear-gradient(135deg, #00ADD8, #00CFFF, #A7F6FF)',
     },
+    framer: {
+        icon: "framer",
+        name: "Framer",
+        bgColor: "#0055FF",
+        gradient: 'linear-gradient(135deg, #0055FF, #111111, #000000)',
+    },
+    chakraui: {
+        icon: "chakraui",
+        name: "Chakra UI",
+        bgColor: "#319795",
+        gradient: 'linear-gradient(135deg, #319795, #3AC7C4, #68D391)',
+    },
+    formik: {
+        icon: "formik",
+        name: "Formik",
+        bgColor: "#1B1B1B",
+        gradient: 'linear-gradient(135deg, #1B1B1B, #2D2D2D, #444444)',
+    },
+    rtl: {
+        icon: "rtl",
+        name: "React Testing Library",
+        bgColor: "#E33332",
+        gradient: 'linear-gradient(135deg, #E33332, #C53030, #9B2C2C)',
+    },
+    vue: {
+        icon: "vuedotjs",
+        name: "Vue.js",
+        bgColor: "#4FC08D",
+        gradient: 'linear-gradient(135deg, #42b883, #35495e, #4FC08D)',
+    },
+    rtkQuery: {
+        icon: "redux",
+        name: "RTK Query",
+        bgColor: "#764ABC",
+        gradient: 'linear-gradient(135deg, #764ABC, #9F7AEA, #B794F4)',
+    },
 };
 
 export const languages = [
-    // techData.javascript,
+    techData.javascript,
     techData.typescript,
     techData.python,
-    // techData.go,
+    techData.go,
 ];
 
 export const frameworks = [
     techData.react,
     techData.nextjs,
+    techData.vue,
     techData.astro,
 ];
 
 export const technologies = [
     techData.reduxToolkit,
-    techData.tanstack,
-    techData.reactRouter,
+    techData.rtkQuery,
+    // techData.reactRouter,
     techData.reactquery,
     techData.zod,
     techData.axios,
@@ -227,7 +264,8 @@ export const styling = [
     techData.sass,
     techData.tailwind,
     techData.greensock,
-    techData.materialui,
+    techData.framer,
+    techData.chakraui,
     // techData.antdesign,
 ];
 

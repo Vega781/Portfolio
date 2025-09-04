@@ -21,7 +21,7 @@ export const Hero = () => {
                         </p>
                         <div className={styles.hero__links}>
                             <a href={socialLinks.hh} className={styles.hero__link}>Download CV</a>
-                            <a href="https://fakecrime.bio/vega7" className={styles.hero__link}>Contact me</a>
+                            <a href={socialLinks.telegram} className={styles.hero__link}>Contact me</a>
                         </div>
                     </HeroLeft>
                 </div>
