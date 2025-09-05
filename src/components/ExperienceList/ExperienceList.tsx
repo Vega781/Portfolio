@@ -27,7 +27,7 @@ export const ExperienceList = () => {
                                     </span>
                                 </div>
                             </div>
-                            <div className={styles.experience__urls}>
+                            {/* <div className={styles.experience__urls}>
                                 {item.github || item.url ? (
                                     <>
                                         {item.github && (
@@ -50,7 +50,7 @@ export const ExperienceList = () => {
                                 ) : (
                                     <span className={styles.experience__indev}>IN DEVELOPMENT</span>
                                 )}
-                            </div>
+                            </div> */}
                         </div>
                         <div className={styles.experience__right}>
                             <h4 className={styles.experience__company}>
